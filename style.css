@@ -285,3 +285,337 @@ header .container-grid{
     width: 90%;
     
 }
+
+#contato {
+     text-align: center;
+     padding-bottom: 100px;
+     margin-top: 100px;
+
+ }
+
+ #contato .titulo {
+     justify-content: center;
+     margin-bottom: 55px;
+
+ }
+
+ #contato h2 {
+     margin-left: 5px;
+
+ }
+
+ #contato form {
+     max-width: 980px;
+     width: 90%;
+
+     margin: 0 auto;
+     padding: 60px 0;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     border: solid 3px var(--roxo-pixelv);
+     border-radius: 40px;
+     background-color: var(--contato);
+
+     color: var(--preto);
+     font-family: "recursive", sans-linear;
+     font-size: 17px;
+
+ }
+
+ .campo {
+     width: 60%;
+     text-align: left;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-bottom: 50px;
+ }
+
+ .campo-descricao {
+     width: 60%;
+     text-align: left;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+
+     margin-bottom: 30px;
+
+ }
+
+ .campo input {
+     height: 40px;
+
+     color: var(--preto);
+     background-color: var(--branco);
+
+     border: none;
+     border-radius: 4px;
+
+     text-indent: 10px;
+     outline: none;
+ }
+
+ .campo-descricao textarea {
+     color: var(--preto);
+     background-color: var(--branco);
+
+     border: none;
+     border-radius: 4px;
+     outline: none;
+     padding: 10px;
+
+     resize: none;
+ }
+
+ .campo label,
+ .campo-descricao label {
+     margin-bottom: 15px;
+ }
+
+ .campo input,
+ .campo-descricao textarea {
+     font-family: "recursive", sans-linear;
+     font-size: 17px;
+ }
+
+ .campo input::placeholder .campo-descricao textarea::placeholder {
+     color: #a0a0a0;
+ }
+
+ .campo input:focus,
+ .campo-descricao textarea:focus {
+     outline: 2px solid var(--verde-pixelv);
+ }
+
+ #contato form button {
+     height: 40px;
+     width: 60%;
+
+     background-color: var(--roxo-pixelv);
+     color: var(--branco);
+
+     border: none;
+     border-radius: 4px;
+
+     font-size: 17px;
+     font-family: "recursive", sans-linear-bold;
+     font-weight: 700;
+
+     text-transform: uppercase;
+     cursor: pointer;
+     transition: background-color 500ms;
+ }
+
+ #contato form button:hover {
+     background-color: var(--verde-pixelv);
+ }
+
+ /* -----------footer-------- */
+ footer{
+    height: 250px;
+    background-image: url(./img/footer.png);
+ }
+
+footer img{
+    height: 90px;
+}
+
+ footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .redes-sociais{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+ 
+ .redes-sociais p{
+    color: var(--branco);
+
+    font-family:"recursive", sans-linear;
+    font-size: 24px;
+
+ }
+
+ .icone-redes{
+    width: 240px;
+    
+    display: flex;
+    justify-content: space-between;
+ }
+ .icone-redes a{
+    color: var(--branco);
+
+ }
+ .icone-redes a:hover{
+    color: var(--verde-pixelv);
+ }
+ /* ----------------menu hamburguer--------------- */
+
+.menu-fechado{
+    display: flex;
+
+}
+
+#ivone-barras,
+#icone-x{
+    display: none;
+
+}
+
+                                                          
+
+ /* ------------------------------responsividade------------- */
+
+ @media screen and (max-width: 1024px) {
+    .titulo
+    .titulo h2{
+        font-size: 22px;
+        font-family: "recursive", sans-linear;
+    }
+
+    .titulo span{
+        line-height: 45px;
+        
+    }
+
+    .menu{
+        justify-content: space-evenly;
+
+    }
+
+#sobre p{
+    font-size: 16px;
+
+}
+
+#servicos .card svg{
+    height: 55px;
+
+}
+
+}
+
+ 
+@media screen and (max-width: 768px){
+    header{
+        position: relative;
+} 
+
+
+header button{
+    width: 50px;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+nav.menu{
+    height: 500px;
+    width: 350px;
+
+    padding: 0px 30px;
+
+    background-color: var(--preto);
+    
+    flex-direction: column;
+    justify-content: space-around;
+
+    position: absolute;
+    top: 165px;
+    right: 0px;
+
+    z-index: 1;
+}
+
+.conteudo-banner img{
+    display: none;
+
+}
+
+.conteudo-banner{
+    text-align: center;
+}
+
+    #sobre img{
+        display: none;
+
+    }
+
+    #cases
+
+    .titulo{
+        justify-content: center;
+    }
+
+    footer .roda-pe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer img{
+        height: 80px;
+
+    }
+
+    .redes-sociais{
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .redes-sociais svg{
+        height: 35px;
+
+    }
+}
+
+@media screen and (max-width: 320px){
+    nav.menu{
+        width: 260px;
+
+    }
+
+    header img{
+        width: 185px;
+
+    }
+
+    .conteudo-banner p{
+        font-size: 24px;
+        width: 310px;
+
+    }
+
+    .conteudo-banner ul{
+        font-size: 25px;
+
+    }
+
+    .titulo,
+    .titulo h2{
+        font-size: 20px;
+    }
+
+
+}
